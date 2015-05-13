@@ -55,11 +55,79 @@ Probobly the easiest thing that you can do, is to consult a style guide. They co
 
 Some of the great ones I have found are 
 
-(links)
+[AngularJS](https://github.com/johnpapa/angular-styleguide)
+[Javascript](https://github.com/airbnb/javascript)
+[Ruby](https://github.com/airbnb/ruby)
+[C++/C](https://google-styleguide.googlecode.com/svn/trunk/cppguide.html)
 
 ## Remove Redundant Redundancy
 
-This is something that you should always be looking out for. Never do more than what is needed for you. This can apply to entire feature implementations or it could be something as simple as not including an `if-statment`, if it is not needed
+This is something that you should always be looking out for. Never do more than what is needed for you. This can apply to entire feature implementations or it could be something as simple as not including a `return`, if it is not needed
 
 One of the common things that i see happen, is that someone will be tyring to implement a new feature, and to do so, they will create all the needed code them selves. Now there is a likely chance that there was some existing code in the app that did the same thing, and you have just now duplicated functionality. If your lucky this will be just something that makes the code look ugly, however there is a likely chance that you are now doing the same thing twice. This can sometimes have very negative affects; for example, imagine making multiple uneeded http requests to the server, for the same data because you were unaware of the existing ones
- 
+
+For examples
+
+- You dont need the ternary operater in an example like this
+
+```javascript
+(object.hasPermission != 0) ? true : false
+```
+
+- You dont need the return statement in this example (only applicable to some langauges)
+
+```javascript
+function add(x, y) {
+	return x + y;
+};
+```
+
+- If your having a hard time with naming a variable, there is likey chance that you dont need it
+
+```javascript
+var boolean = subject.hasPermission;
+
+if (boolean) {
+	//do something
+} else {
+	//do something else
+}
+```
+
+**Other Tips**
+
+- Always check your logs to ensure that you are not doing the samething twice
+- Make sure you get a code review, so that other coworkers can make you aware of code that already exists
+
+## DRY 
+
+- Dont repeat yourself
+- Apply this when ever you can, from test cases to front end code
+
+## Lines Of Code
+
+Line count is not a good way to measure how readable or good your code is, in fact its quite the oposite. Now this goes against another great rule, which is _the best code is no code_, and this may give you the incentive to try and reduce the number of lines in your code. However, going out of your way to create super compact code, will make the code much harder to understand in the future for yourself and others.
+
+
+```javascript
+function add(x, y) {
+	x + y;
+};
+```
+
+- No one actually ever uses an add function, I mean why would you? All that happens is that you increase the lines of code, and you dont acheive anymore readability 
+
+- However, imagine that you were adding currency; and up until this time you were adding the same currency. But what if in the next month, the project now asked for adding diffferent currency. With a pre-existing add function, you only have to update the function and the changes are seen every where 
+
+- Always make descicions with the future in mind. Have the worst case scenerio in mind.
+
+## Dont Comment
+
+- Write code so that you dont need to comment 
+
+- Dont write comments to explain the basic features of a language
+
+## Small Methods
+
+- A method/function should do one thing and one thing only, this is more likely to be true if your methods are smaller.
+- Try as much as you can to reduct the number of conditionals
