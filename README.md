@@ -22,16 +22,16 @@ _Note:_ Some of these tips you may not agree with, and that’s fine. There are 
 
 ## Table of contents
 
-    1. [Tests](#tests)
-    1. [Style Guides](#style-guides)
-    1. [Remove Redundant Redundancy](#remove-redundant-redundancy)
-    1. [DRY](#dry)
-    1. [Lines Of Code](#lines-of-code)
-    1. [Dont Comment](#dont-comment)
-    1. [Small Methods](#small-methods)
-    1. [Objects Vs Procedures](#objects-vs-procedures)
-    1. [Code Review](#code-review)
-    1. [Decoupling](#decoupling)
+1. [Tests](#tests)
+1. [Style Guides](#style-guides)
+1. [Remove Redundant Redundancy](#remove-redundant-redundancy)
+1. [DRY](#dry)
+1. [Lines Of Code](#lines-of-code)
+1. [Dont Comment](#dont-comment)
+1. [Small Methods](#small-methods)
+1. [Objects Vs Procedures](#objects-vs-procedures)
+1. [Code Review](#code-review)
+1. [Decoupling](#decoupling)
 
 ## Tests
 
