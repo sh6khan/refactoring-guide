@@ -8,13 +8,13 @@ I recently got the opportunity to prepare a technical mile stone presentation fo
 
 Writing good, refactored and readable code has the following benefits 
 
-Makes it more enjoyable for your co workers to work with your code
-Makes it easier for other people to change code in the future
-Saves a lot of money by not wasting peoples time with trying to decipher code
-Makes you feel good inside, kinda like cleaning your room 
-Allows you to discover places for hidden performance improvements
-It makes you a better programmer overall 
-Its something that extends all languages and levels of expertise
+1. Makes it more enjoyable for your co workers to work with your code
+2. Makes it easier for other people to change code in the future
+3. Saves a lot of money by not wasting peoples time with trying to decipher code
+4. Makes you feel good inside, kinda like cleaning your room 
+5. Allows you to discover places for hidden performance improvements
+6. It makes you a better programmer overall 
+7. Its something that extends all languages and levels of expertise
 
 The rest of this guide will be a list of all the things that you can do to improve your code. They are structured in a way so that the earlier items are ones that just about anyone can do, while the later ones are bigger structural changes 
 
