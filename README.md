@@ -131,3 +131,43 @@ function add(x, y) {
 
 - A method/function should do one thing and one thing only, this is more likely to be true if your methods are smaller.
 - Try as much as you can to reduct the number of conditionals
+- Try and reduce the number of arguments that your method requires to function
+- Name your methods accordignly, If the purpose of a function is to get a file name, the method should be defined as `getFileName`
+- Keep to language specific naming conventions
+- Use semi-colons when ever needed (Javascript)
+
+## Objects Vs Procedures
+
+###### Long Procedures 
+
+Pros:
+
+- Easy to read
+- Everything you need is all in one place
+
+Cons:
+
+- Hard to change
+- Hard to test
+- They can grow, eventually negating the _Easy to read_ point
+
+##### Objects
+
+Pros:
+
+- Easy to change
+- Easy to test
+- Requires less reading of code
+
+Cons:
+
+- You never fully get the whole picture of what your code does, only little peices
+- Feels like extra work to write code in this pattern
+
+## Code Review
+
+- Make sure you get someone else to approve your code before merging
+- When doing a code review look for more than just passing tests and functionality; Look for things like abstractability, better use of data structures or algorithms, naming conventions etc
+
+
+
