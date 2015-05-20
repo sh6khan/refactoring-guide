@@ -55,10 +55,10 @@ Probobly the easiest thing that you can do, is to consult a style guide. They co
 
 Some of the great ones I have found are 
 
-[AngularJS](https://github.com/johnpapa/angular-styleguide)
-[Javascript](https://github.com/airbnb/javascript)
-[Ruby](https://github.com/airbnb/ruby)
-[C++/C](https://google-styleguide.googlecode.com/svn/trunk/cppguide.html)
+1. [AngularJS](https://github.com/johnpapa/angular-styleguide)
+1. [Javascript](https://github.com/airbnb/javascript)
+1. [Ruby](https://github.com/airbnb/ruby)
+1. [C++/C](https://google-styleguide.googlecode.com/svn/trunk/cppguide.html)
 
 ## Remove Redundant Redundancy
 
@@ -138,7 +138,7 @@ function add(x, y) {
 
 ## Objects Vs Procedures
 
-###### Long Procedures 
+##### Procedures
 
 Pros:
 
@@ -168,6 +168,10 @@ Cons:
 
 - Make sure you get someone else to approve your code before merging
 - When doing a code review look for more than just passing tests and functionality; Look for things like abstractability, better use of data structures or algorithms, naming conventions etc
+- Always look out for existing functionality and code
+- Try and keep up to date with your own reviews, If you give feed back try and confirm the resulting changes
 
+## Decoupling
 
+In Progress
 
